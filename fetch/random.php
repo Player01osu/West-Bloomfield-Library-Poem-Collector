@@ -1,5 +1,5 @@
 <?php
-  # The key below serves to ensure users cannot artificially increase the number of prints counter by visiting this site. 
+  # The key below serves to ensure users cannot artificially increase the number of prints counter by visiting this site.
   # Keep the key secure.
   $PI_SECURITY_KEY = "lib_printer";
 
@@ -13,7 +13,7 @@
   # KEEP THIS INFORMATION SECURE
   # The database is password protected.
   # The database cannot be read or written to without the correct MySQL username and password.
-  # The MySQL credentials should be the same as the phpMyAdmin portal. 
+  # The MySQL credentials should be the same as the phpMyAdmin portal.
   $username = "root";
   $password = "62VNmTy*y9E6";
 
@@ -29,17 +29,17 @@
       # The code below fetches an approved poem at random.
       $sql = mysqli_query($conn, "SELECT * FROM poems WHERE approved=1 order by RAND() limit 1");
 
-      # The code below prints 
+      # The code below prints
       while ($rows = mysqli_fetch_array($sql))
       {
         echo $rows["content"];
         ?>
 
-        Written By <?php echo $rows["name"]."."; 
-        
+        Written By <?php echo $rows["name"].".";
+
         $poem_id = $rows["id"];
-        
-        # Increment the number of prints variable in the database. 
+
+        # Increment the number of prints variable in the database.
         $sql_2 = "UPDATE poems SET num_prints = num_prints + 1  WHERE id='".$poem_id."'";
         mysqli_query($conn, $sql_2);
       }

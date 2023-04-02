@@ -53,7 +53,7 @@ input:focus {
   outline: 2px solid rgb(180, 180, 180);
 }
 .required {
-  color: #de4f1f; 
+  color: #de4f1f;
 }
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
@@ -119,7 +119,7 @@ input:focus {
 }
 ::placeholder {
   color: #fff;
-  opacity: 0.75; 
+  opacity: 0.75;
 }
 .text_limit {
     position: absolute;
@@ -260,7 +260,7 @@ input:focus {
 }
 
 
-@media (max-width:525px) { 
+@media (max-width:525px) {
   .container {
     zoom: 90%;
   }
@@ -270,8 +270,8 @@ input:focus {
   .success_container {
     zoom: 75%;
   }
-} 
-@media (max-width:450px) { 
+}
+@media (max-width:450px) {
   .container {
     zoom: 80%;
   }
@@ -281,7 +281,7 @@ input:focus {
   .success_container {
     zoom: 65%;
   }
-} 
+}
 
 
 

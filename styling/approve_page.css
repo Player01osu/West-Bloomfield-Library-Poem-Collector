@@ -22,7 +22,7 @@ table td, table th {
 ion-icon {
   font-size: 32px;
 }
-table tr:nth-child(even) { 
+table tr:nth-child(even) {
   background: rgb(10, 10, 10);
 }
 
@@ -93,7 +93,7 @@ input:focus {
   outline: 2px solid rgb(180, 180, 180);
 }
 .required {
-  color: #de4f1f; 
+  color: #de4f1f;
 }
 .login {
   width: 320px !important;
